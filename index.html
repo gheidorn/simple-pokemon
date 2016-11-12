@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Pokemon</title>
+    <link rel="stylesheet" type="text/css" href="css/sp.css" />
+  </head>
+  <body>
+    <h1>Welcome to Simple Pokemon</h1>
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <h2 id="username"></h2>
+
+
+    <script>
+
+    let username = localStorage.setItem('username', 'OwenAugustus') || 'unknown soldier';
+    let usernameLabel = document.getElementById('username')
+    usernameLabel.innerHtml = username;
+
+    </script>
+    <script>require('./login.js')</script>
+  </body>
+</html>
